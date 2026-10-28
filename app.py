@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "DGHALKSFGBAS"
 
 usuarios = {"Klever": "09121988",
-            "Klever": "09121988"}
+            "klever": "09121988"}
 
 
 @app.route("/")
