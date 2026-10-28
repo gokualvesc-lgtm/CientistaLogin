@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mensagens recuperadas | DigiFun Intranet</title>
+<style>
+:root{--bg:#10151a;--panel:#192129;--panel2:#202b35;--text:#dce5e9;--muted:#8fa2ad;--accent:#d0a65a;--line:#34434d;--danger:#b65d5d}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#0b1014,#141d24);color:var(--text);font:15px/1.55 "Segoe UI",Arial,sans-serif}
+header{padding:22px max(20px,calc((100% - 1040px)/2));background:#0b1014;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.16em;color:var(--accent);font-size:1.15rem}
+.sub{color:var(--muted);font-size:.82rem;margin-top:3px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+nav a{color:var(--text);text-decoration:none;background:var(--panel);border:1px solid var(--line);padding:7px 11px;border-radius:5px;font-size:.88rem}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+main{max-width:1040px;margin:28px auto;padding:0 20px 48px}
+h1{font-size:1.75rem;margin:0 0 5px}
+h2{font-size:1.12rem;margin:0 0 10px;color:#f0d49c}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:17px}
+.card p:last-child{margin-bottom:0}
+.tag{display:inline-block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;padding:3px 7px;border-radius:3px;background:#263640;color:#b6c8d1;margin-bottom:8px}
+.warn{border-left:3px solid var(--danger)}
+.meta{font-size:.82rem;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;margin-top:12px;background:var(--panel)}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--accent);font-weight:600}
+footer{border-top:1px solid var(--line);padding-top:14px;margin-top:28px;color:var(--muted);font-size:.78rem}
+code{color:#f0d49c;background:#10151a;padding:2px 5px;border-radius:3px}
+.smallprint{font-size:.72rem;color:#7d8c94}
+a.inline{color:var(--accent)}
+@media(max-width:600px){header{padding:18px 16px}main{padding:0 14px 36px}h1{font-size:1.45rem}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">DIGIFUN <span style="color:#8fa2ad">/ INTRANET</span></div>
+  <div class="sub">REDE INTERNA • ACESSO CORPORATIVO • BUILD 4.8.2</div>
+  <nav><a href="/dashboard" >Painel</a><a href="/funcionarios" >Funcionários</a><a href="/relatorios" >Relatórios</a><a href="/mensagens" aria-current="page">Mensagens</a><a href="/registros" >Registros internos</a></nav>
+</header>
+<main>
+
+<div class="tag">Recuperação de dados</div>
+<h1>Mensagens recuperadas</h1>
+<p class="muted">Mensagens parciais extraídas de terminais, e-mails e registros locais. A autoria pode estar incorreta.</p>
+<div class="grid">
+<section class="card warn"><div class="tag">Terminal 03 · 13/08/2015</div><h2>Sem remetente</h2><p>“ajuda… alguém precisa vir para o setor…”</p><p class="smallprint">Transmissão interrompida às 22:14.</p></section>
+<section class="card warn"><div class="tag">Conta: Desconhecido · 13/08/2015</div><h2>Rascunho não enviado</h2><p>“SOS. eles saíram dos compartimentos e eu não…”</p><p class="smallprint">Destino do e-mail não recuperado.</p></section>
+<section class="card"><div class="tag">Canal interno · 22:31</div><h2>Mensagem de voz transcrita</h2><p>“Eles saíram. Eu tranquei a porta, mas o sistema continua dizendo que o corredor está…”</p><p class="smallprint">Áudio original corrompido.</p></section>
+<section class="card warn"><div class="tag">Terminal de manutenção</div><h2>Texto temporário</h2><p>“Não deixem o Lucker receber outro comando. A ordem veio de…”</p><p class="smallprint">O arquivo foi sobrescrito parcialmente.</p></section>
+<section class="card"><div class="tag">Conta não identificada</div><h2>Mensagem salva localmente</h2><p>“Se alguém encontrar isto, não confie no relatório oficial. A sala não aparece na planta porque…”</p><p class="smallprint">Última edição: desconhecida.</p></section>
+<section class="card"><div class="tag">Fila de saída</div><h2>Mensagem incompleta</h2><p>“Eu ouvi eles conversa.. Plano..”</p><p class="smallprint">Sem destinatário registrado.</p></section>
+</div>
+
+<footer>Uso interno. A reprodução ou distribuição destes registros sem autorização é proibida. <span style="float:right">DF-NET / 2010</span></footer>
+</main>
+</body>
+</html>

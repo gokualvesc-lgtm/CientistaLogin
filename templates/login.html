@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acesso interno | DigiFun</title>
+<style>
+:root{--bg:#10151a;--panel:#192129;--text:#dce5e9;--muted:#8fa2ad;--accent:#d0a65a;--line:#34434d;--danger:#b65d5d}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at top,#202b35,#0b1014 68%);color:var(--text);font:15px/1.5 "Segoe UI",Arial,sans-serif}
+.panel{width:min(100%,420px);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px;box-shadow:0 18px 55px #0007}
+.brand{font-weight:800;letter-spacing:.16em;color:var(--accent);font-size:1.15rem}.sub{color:var(--muted);font-size:.8rem;margin:4px 0 24px}
+h1{font-size:1.45rem;margin:0 0 6px}p{margin:8px 0}.muted{color:var(--muted);font-size:.9rem}
+label{display:block;margin:16px 0 6px;font-size:.88rem;color:#c6d1d6}
+input{width:100%;background:#0f151a;color:var(--text);border:1px solid var(--line);border-radius:5px;padding:12px;font:inherit;outline:none}
+input:focus{border-color:var(--accent)}
+button{width:100%;margin-top:20px;padding:12px;background:var(--accent);color:#14191d;border:0;border-radius:5px;font-weight:700;font:inherit;cursor:pointer}
+.note{margin-top:18px;border-top:1px solid var(--line);padding-top:14px;font-size:.78rem;color:var(--muted)}
+.status{margin-top:12px;color:#e1b8a5;font-size:.85rem;min-height:1.3em}
+</style>
+</head>
+<body>
+<main class="panel">
+  <div class="brand">DIGIFUN</div>
+  <div class="sub">REDE INTERNA • TERMINAL CORPORATIVO</div>
+  <h1>Autenticação necessária</h1>
+  <p class="muted">Entre com suas credenciais corporativas para continuar.</p>
+  <form action="/login" method="post">
+    <label for="usuario">Usuário</label>
+    <input id="usuario" name="usuario" autocomplete="username" placeholder="ID ou nome de usuário" required>
+    <label for="senha">Senha</label>
+    <input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Senha de acesso" required>
+    <button type="submit">Acessar intranet</button>
+  </form>
+  <div class="status">Aviso: autenticação local não verificada.</div>
+  <div class="note">Acesso monitorado. Tentativas podem ser registradas no sistema de segurança.<br>Terminal DF-NET / Build 4.8.2</div>
+</main>
+</body>
+</html>
