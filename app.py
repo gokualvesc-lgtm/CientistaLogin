@@ -26,13 +26,12 @@ def login():
                 return render_template("login.html")
         except:
             pass
-
-        if usuarios[user] == senha:
-            session["logado"] = True
-            return redirect(url_for("index"))
-
-
-
+        try:
+            if usuarios[user] == senha:
+                session["logado"] = True
+                return redirect(url_for("index"))
+        except:
+                pass
 
     return render_template("login.html")
 
